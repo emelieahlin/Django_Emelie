@@ -10,21 +10,16 @@
  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Source+Serif+Pro|Vidaloka" rel="stylesheet">
 </head>
 <body>
-<h1>WOHOOO!</h1>
-<br>
-<br>
+<img class="startpicture" src="/static/vinflaska.png" alt="Mat och vin-quiz" height="300" width="100%">
+<h2>Ditt resultat</h2>
 <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 column4">
        <div class="full-width-div">
-      <br>
-      <br>
-        <h3>Du är klar och fick {{ correct }} av {{ total }}</h3>
+        <h2> {{ correct }} rätt av {{ total }}</h2>
       </div>
     </div>
   </div>
-  <br>
-  <br>
   <center><a class="button" type="button" href="{% url 'start_page' %}">Tillbaka till startsidan</a></center>
 </body>
 </html>

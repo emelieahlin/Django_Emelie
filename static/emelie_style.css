@@ -3,25 +3,22 @@ body {
 	font-family: 'Vidaloka', serif;
 	font-family: 'Playfair Display SC', serif;
 	font-family: 'Source Serif Pro', serif;
-	padding-top: 46px;
-}
+	}
 h1 {
 	font-size: 72px;
 	font-weight: bold;
 	text-align: center;
 }
 h2 {
-	font-size: 38px;
+	font-size: 48px;
 	font-weight: bold;
 	text-align: center;
 }
 h3 {
 	font-size: 24px;
-	font-weight: bold;
 }
 h4 {
 	font-size: 20px;
-	font: italic;
 }
 p {
 	text-align: center;
@@ -34,20 +31,18 @@ a {
 	margin-bottom: 20px;
 }
 .startpicture {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .column{
 	text-align: center;
 }
 .column4 { 
-	background-color: #365299;
 	width: 100%;
 	text-align: center;
-	color: #ffffff;
 	vertical-align: middle;
-	padding: 15px;
-	min-height: 200px;
+	padding: 5px;
+	min-height: 100px;
 }
 .full-width-div {
     width: 100%;
