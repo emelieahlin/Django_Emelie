@@ -15,6 +15,9 @@
   <p>av Emelie Ahlin Andersson</p>
   <img src="/static/barcelona.jpg" alt="Vi gör quiz i Barcelona" height="300" width="100%">
   <br>
+  {% for quiz in quizzes %}
+  <p>{{ quiz.name }}</p>
+{% endfor %}
   <br>
   <div class="container">
     <div class="row">
