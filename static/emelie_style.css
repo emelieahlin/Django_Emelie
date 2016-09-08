@@ -16,11 +16,11 @@ h2 {
 	text-align: center;
 }
 h3 {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
 }
 h4 {
-	font-size: 22px;
+	font-size: 20px;
 	font: italic;
 }
 p {
@@ -29,6 +29,12 @@ p {
 }
 a {
 	text-align: center;
+}
+.subtitle {
+	margin-bottom: 20px;
+}
+.startpicture {
+	margin-bottom: 20px;
 }
 
 .column{
@@ -40,21 +46,27 @@ a {
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
+	padding: 15px;
+	min-height: 200px;
 }
 .full-width-div {
     width: 100%;
-    left: 0;
 }
 
 .button {
     background-color: #00a9ec;
     border: none;
-    color: white;
+   	color: white;
     padding: 8px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+.button:hover {
+	background-color: #365299;
+	color: white;
+	text-decoration: none;
 }
 .ruta {
 	display: inline-block;

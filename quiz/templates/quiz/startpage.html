@@ -12,18 +12,16 @@
 <body>
   <h1>CODELIES QUIZ</h1>
   <br>
-  <p>av Emelie Ahlin Andersson</p>
-  <img src="/static/barcelona.jpg" alt="Vi gör quiz i Barcelona" height="300" width="100%">
-  <br>
-  <br>
+  <p class="subtitle">av Emelie Ahlin Andersson</p>
+  <img class="startpicture" src="/static/barcelona.jpg" alt="Vi gör quiz i Barcelona" height="300" width="100%">
   <div class="container">
     <div class="row">
     {% for quiz in quizzes %}
       <div class="col-md-4 column">
-        <h3>1</h3>
-        <h4>{{ quiz.name }}</h4>
+        <h2>{{ quiz.quiz_number }}</h2>
+        <h3>{{ quiz.name }}</h3>
         <p>{{ quiz.description }}</p>
-          <button class="button" type="button"><a href="{% url 'quiz_page' quiz.quiz_number %}">Gå til Quizet</a></button>
+          <a class="button" type="button" href="{% url 'quiz_page' quiz.quiz_number %}">Gå till Quiz:et</a>
       </div>
       {% endfor %}
     </div>

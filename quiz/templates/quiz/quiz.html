@@ -16,16 +16,17 @@
     <div class="row">
       <div class="col-md-12 column4">
        <div class="full-width-div">
-      <br>
-      <br>
-      <br>
-        <h2>Testa dina kunskaper om {{ quiz.name }}</h2>
+       <br>
+       <br>
+        <h3 class="ruta">Du har valt att testa dina kunskaper om:</h3>
+        <h4> {{ quiz.name }}</h4>
       </div>
     </div>
   </div>
 <br>
+<br>
 <p>{{ quiz.description }}</p>
 <br>
-<p><a href="{% url 'question_page' quiz_number 1 %}">Starta quizen!</a> </p>
+<center><a class="button" type="button" href="{% url 'question_page' quiz_number 1 %}">Starta quiz:et</a></center>
 </body>
 </html>

@@ -18,7 +18,7 @@
        <div class="full-width-div">
       <br>
       <br>
-        <p>{{ question }}</p>
+        <h4>{{ question }}</h4>
         <br>
 	<p class="ruta">
 		<input type="radio" name="antal" id="20">
@@ -27,7 +27,6 @@
 		<label for="male">{{ answer2 }}</label><br>
 		<input type="radio" name="antal" id="40">
 		<label for="male">{{ answer3 }}</label><br>
-		<br>
 	</p>
 	<br>
 		</p>
@@ -35,6 +34,6 @@
     </div>
   </div>
   <br>
-  <p><a href="{% url 'completed_page' quiz_number %}">Nästa>></a></p>
+  <center><a class="button" type="button" href="{% url 'completed_page' quiz_number %}">Nästa</a></center>
 </body>
 </html>
