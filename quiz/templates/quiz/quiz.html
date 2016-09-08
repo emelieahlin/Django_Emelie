@@ -26,6 +26,6 @@
 <br>
 <p>{{ quiz.description }}</p>
 <br>
-<p><a href="https://www.nordnet.se/brand/">Starta quizen!</a> </p>
+<p><a href="{% url 'question_page' quiz_number 1 %}">Starta quizen!</a> </p>
 </body>
 </html>
