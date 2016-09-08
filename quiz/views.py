@@ -16,10 +16,13 @@ quizzes = [
    	    	"name": "Världens mest kända hackare",
 	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
 ]
-
+# Create your views here.
 
 def startpage(request):
-	return render(request, "quiz/startpage.html")
+	context = {
+		"quizzes": quizzes,
+	}
+	return render(request, "quiz/startpage.html", context)
 
 def quiz(request): 
 	return render(request, "quiz/quiz.html")
@@ -30,4 +33,4 @@ def question(request):
 def completed(request):
 	return render(request, "quiz/completed.html")
 
-# Create your views here.
+
