@@ -15,9 +15,17 @@ h2 {
 	font-weight: bold;
 	text-align: center;
 }
+h3 {
+	font-size: 28px;
+	font-weight: bold;
+}
+h4 {
+	font-size: 22px;
+	font: italic;
+}
 p {
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 }
 a {
 	text-align: center;
@@ -48,5 +56,8 @@ a {
     display: inline-block;
     font-size: 16px;
 }
-
+.ruta {
+	display: inline-block;
+	text-align: left;
+}
 
