@@ -17,17 +17,16 @@
       <div class="col-md-12 column4">
        <div class="full-width-div">
         <h4>{{ question }}</h4>
-	<h4 class="ruta">
-		<input type="radio" name="antal" id="20">
-		<label for="male">{{ answer1 }}</label><br>
-		<input type="radio" name="antal" id="30">
-		<label for="male">{{ answer2 }}</label><br>
-		<input type="radio" name="antal" id="40">
-		<label for="male">{{ answer3 }}</label><br>
+	<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post"><h4 class="ruta">
+	 	{% csrf_token %}
+		<input type="radio" name="answer" value="1"> {{ answer1 }} <br>
+		<input type="radio" name="answer" value="2"> {{ answer2 }} <br>
+		<input type="radio" name="answer" value="3"> {{ answer3 }} <br>
 	</h4>
+	</form>
       </div>
     </div>
   </div>
-  <center><a class="button" type="button" href="{% url 'completed_page' quiz_number %}">Nästa</a></center>
+  <center><a class="button" type="submit">Nästa</a></center>
 </body>
 </html>
