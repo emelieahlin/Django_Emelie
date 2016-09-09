@@ -1,4 +1,4 @@
 Django==1.10
 gunicorn
-dj-databas-url
+dj-database-url
 whitenoise
